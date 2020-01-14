@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+D:\Workspace\ImportantAlgorithms\KnapSack_Algorithm\Java\.metadata\.plugins\org.eclipse.jdt.core
+1187341907.index
+3816223248.index
+3709254273.index
+2722044300.index

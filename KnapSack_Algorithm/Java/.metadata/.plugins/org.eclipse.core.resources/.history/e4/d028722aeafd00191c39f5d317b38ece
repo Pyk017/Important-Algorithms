@@ -1,0 +1,48 @@
+import java.util.*;
+public class KnapSack_Greedy {
+	public static void display(int n, int p[], int w[], int obj[], double pw[]) {
+		System.out.print("Objects are :- ");
+		for (int i=0; i<n; i++) {
+			System.out.print(obj[i]+" ");
+		}
+		System.out.print("\nProfits are :- ");
+		for (int i=0; i<n; i++) {
+			System.out.print(p[i]+" ");
+		}
+		System.out.print("\nWeights are :- ");
+		for (int i=0; i<n; i++) {
+			System.out.print(w[i]+" ");
+		}
+		System.out.print("\nProfit/Weight ratio are :- ");
+		for (int i=0; i<n; i++) {
+			System.out.print(pw[i]+" ");
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner (System.in);
+		System.out.println("Enter total number of objects :- ");
+		int n = in.nextInt();
+		System.out.println("Enter total Capacity of the KnapSack :- ");
+		int m = in.nextInt();
+		int profit[] = new int[n];
+		int weight[] = new int[n];
+		double pw[] = new double[n];
+		int obj[] = new int[n];
+		System.out.println("Enter profits of the objects :- ");
+		for (int i=0; i<n; i++) {
+			profit[i] = in.nextInt();
+			obj[i] = i+1;
+		}
+		System.out.println("Enter weights of the objects :- ");
+		for (int i=0; i<n; i++) {
+			weight[i] = in.nextInt();
+		}
+		for (int i=0; i<n; i++) {
+			pw[i] = (double)profit[i] / (double)weight[i];
+		}
+		display(n,profit,weight,obj,pw);
+		in.close();
+	}
+
+}
