@@ -1,4 +1,4 @@
-def CountingSort(a):
+def counting_sort(a):
     l = [0]*(max(a) + 1)
     for i in a:
         l[i] += 1
@@ -9,6 +9,7 @@ def CountingSort(a):
                 l2.append(i)
 
     return l2
+
 
 n = int(input("Enter Range = "))
 a = [int(input("Enter element {} = ".format(i+1))) for i in range(n)]
