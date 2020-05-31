@@ -24,3 +24,4 @@ def alterantive(a):
 ar = list(map(int, input().split()))
 res = maximum_lis(ar)
 print(res)
+print(alterantive(ar))
